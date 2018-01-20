@@ -1,0 +1,19 @@
+{
+  "presets": [
+    ["@babel/preset-env", { "modules": false }],
+    "@babel/preset-stage-0",
+    "@babel/preset-react"
+  ],
+  "env": {
+    "build": {
+      "ignore": ["src/__stories__/**/*.js"]
+    },
+    "test": {
+      "presets": [
+        ["@babel/preset-env"],
+        "@babel/preset-stage-0",
+        "@babel/preset-react"
+      ]
+    }
+  }
+}
