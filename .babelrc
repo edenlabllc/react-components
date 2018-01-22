@@ -6,7 +6,7 @@
   ],
   "env": {
     "build": {
-      "ignore": ["src/__stories__/**/*.js"]
+      "ignore": ["src/__stories__/**/*.js", "src/__tests__/**/*.js"]
     },
     "test": {
       "presets": [

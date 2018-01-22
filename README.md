@@ -11,11 +11,11 @@ npm install @edenlabllc/react-components --save
 ### Development
 
 ```
-npm run storybook
+npm start
 ```
 
 ### Testing
 
 ```
-npm run test
+npm test
 ```

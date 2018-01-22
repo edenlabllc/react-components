@@ -3,8 +3,11 @@
   "version": "1.0.0-alpha.0",
   "description": "React Components by Edenlab",
   "main": "lib",
+  "files": [
+    "lib"
+  ],
   "scripts": {
-    "storybook": "start-storybook -p 9001 -c .storybook",
+    "start": "start-storybook -p 9001 -c .storybook",
     "test": "jest",
     "lint": "prettier --list-different *.{js,json,md}",
     "docs": "rimraf docs && build-storybook -c .storybook -o docs",
@@ -13,21 +16,30 @@
     "prepublish": "npm run build"
   },
   "lint-staged": {
-    "*.{js,json,md}": ["prettier --write", "git add"],
-    "src/__stories__/**": ["docs", "git add docs"]
+    "*.{js,json,md}": [
+      "prettier --write",
+      "git add"
+    ],
+    "src/__stories__/**": [
+      "docs",
+      "git add docs"
+    ]
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/edenlabllc/react-components.git"
   },
-  "keywords": ["components", "react", "edenlab"],
+  "keywords": [
+    "components",
+    "react",
+    "edenlab"
+  ],
   "author": "Edenlab",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/edenlabllc/react-components/issues"
   },
   "homepage": "https://github.com/edenlabllc/react-components",
-  "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.0.0-beta.38",
     "@babel/core": "^7.0.0-beta.38",
@@ -35,6 +47,7 @@
     "@babel/preset-react": "^7.0.0-beta.38",
     "@babel/preset-stage-0": "^7.0.0-beta.38",
     "@storybook/addon-actions": "^3.3.10",
+    "@storybook/addon-info": "^3.3.10",
     "@storybook/addon-knobs": "^3.3.10",
     "@storybook/addon-options": "^3.3.10",
     "@storybook/react": "^3.3.10",
