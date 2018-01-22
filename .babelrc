@@ -4,6 +4,7 @@
     "@babel/preset-stage-0",
     "@babel/preset-react"
   ],
+  "plugins": ["babel-plugin-macros"],
   "env": {
     "build": {
       "ignore": ["src/__stories__/**/*.js", "src/__tests__/**/*.js"]

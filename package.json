@@ -40,6 +40,11 @@
     "url": "https://github.com/edenlabllc/react-components/issues"
   },
   "homepage": "https://github.com/edenlabllc/react-components",
+  "dependencies": {
+    "emotion": "^8.0.12",
+    "prop-types": "^15.6.0",
+    "react-emotion": "^8.0.12"
+  },
   "devDependencies": {
     "@babel/cli": "^7.0.0-beta.38",
     "@babel/core": "^7.0.0-beta.38",
@@ -53,6 +58,7 @@
     "@storybook/react": "^3.3.10",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^22.1.0",
+    "babel-plugin-macros": "^2.0.0",
     "husky": "^0.14.3",
     "jest": "^22.1.4",
     "lint-staged": "^6.0.1",
