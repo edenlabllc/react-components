@@ -8,16 +8,6 @@
     "transform-runtime",
     "transform-decorators-legacy",
     [
-      "css-modules-transform", {
-      "extensions": [".css", ".scss"],
-      "extractCss": {
-        "dir": "./es",
-        "relativeRoot": "./src",
-        "filename": "[path]/[name].css"
-      }
-    }
-    ],
-    [
       "module-resolver",
       {
         "alias": {

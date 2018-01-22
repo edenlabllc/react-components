@@ -5,7 +5,7 @@ export const createComponentStory = (options) => {
   const component = options.component.ComposedComponent || options.component;
   const name = component.displayName || component.name;
   const story = storiesOf(name);
-  const docs = require(`!!docgen-loader!../lib/${name}/index.js`); // eslint-disable-line
+  const docs = require(`!!docgen-loader!../src/${name}/index.js`); // eslint-disable-line
 
   story.docs = docs.reduce((target, item) => {
     if (item.displayName) {
