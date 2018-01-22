@@ -9,6 +9,11 @@ Components for React JS application.
 ```
 npm install react-nebo15-components --save
 ```
+### Compile
+
+```
+npm run compile
+```
 
 ### Storybook
 
